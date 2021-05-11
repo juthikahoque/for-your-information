@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign</title>
+    <link rel="stylesheet" href="campaign-styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="login">
+                <a href="login.html">sign up</a>
+            </li>
+            <li class="nav-bar">
+                <a href="campaign.html" class="campaign">Campaigns</a>
+            </li>
+            <li class="nav-bar">
+                <a href="issues.html" class="issues">World Issues</a>
+            </li>
+            <li class="nav-bar">
+                <a href="ourMission.html" class="mission">Our Mission</a>
+            </li> 
+            <li class="nav-bar">
+                <a href="index.html" class="home">Home </a>
+            </li>
+            <li class="nav-bar">
+                <a href="self-care.html">Self-Care</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="banner">
+        <h1>#campaigns</h1>
+        <img src="img/campaign.png" alt="background">
+        <section class="format">
+            <div class="column">
+                <h3> 7 
+                    <span>posts</span>
+                </h3>
+                <a href="login.html">Follow</a>
+                <p>Sign up for weekly emails!</p>
+            </div>
+            <br><br>
+            <div class="column">
+                <form id="form" role="search">
+                    <input class="searchInput" type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                    <button class="searchButton">Search</button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <section class="icons">
+        <li class="img-wrap">
+            <a href="blm.html">
+                <img src="img/BLM.jpg" alt="BLM">
+            </a>
+            <p class="descr">Black Lives Matter Movement</p>
+        </li>
+        <li class="img-wrap">
+            <a href="climatechange.html">
+                <img src="img/climate-change.jpg" alt="climate-change">
+            </a>
+            <p class="descr">Climate Change</p>
+        </li>
+        <li class="img-wrap">
+            <a href="covid.html">
+                <img src="img/covid19.jpg" alt="covid">
+            </a>
+            <p class="descr">Covid-19</p>
+        </li>
+        <li class="img-wrap">
+            <a href="beirut.html">
+                <img src="img/beirut.jpg" alt="beirut">
+            </a>
+            <p class="descr">Beirut Explosion</p>
+        </li>
+        <li class="img-wrap">
+            <a href="syria.html">
+                <img src="img/syria.jpg" alt="syria">
+            </a>
+            <p class="descr">Syrian War</p>
+        </li>
+        <li class="img-wrap">
+            <a href="palestine.html">
+                <img src="img/palestine.jpg" alt="palestine">
+            </a>
+            <p class="descr">Palestinian Crisis</p>
+        </li>
+        <li class="img-wrap">
+            <a href="sponsor.html">
+                <img src="img/sponsor.jpg" alt="sponsor a child">
+            </a>
+            <p class="descr">Sponsor a Child</p>
+        </li>
+    </section>
+
+    <script>
+        const f = document.getElementById('form');
+        const q = document.getElementById('query');
+        const google = 'https://www.google.com/search?q=site%3A+';
+        const site = 'pagedart.com';
+
+        function submitted(event) {
+        event.preventDefault();
+        const url = "climatechange.html";
+        const win = window.open(url, '_blank');
+        win.focus();
+        }
+
+        f.addEventListener('submit', submitted);
+    </script>
+
+    
+</body>
+</html>
